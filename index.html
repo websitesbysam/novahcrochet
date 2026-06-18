@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NOVAH Crochets – Handcrafted with love. Premium handmade crochet pieces crafted for modern living." />
+  <title>NOVAH Crochets – Stitched with Soul</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <header class="nav-wrapper" id="top">
+    <nav class="nav-inner">
+      <a href="#top" class="nav-brand">
+        <div class="nav-logo" aria-label="NOVAH Crochets logo">
+          <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="22" cy="22" r="21" stroke="#F9F8EE" stroke-width="1.5"/>
+            <path d="M14 28 Q18 16 22 22 Q26 28 30 16" stroke="#EFDAD8" stroke-width="2" stroke-linecap="round" fill="none"/>
+            <circle cx="14" cy="28" r="2" fill="#EFDAD8"/>
+            <circle cx="30" cy="16" r="2" fill="#EFDAD8"/>
+          </svg>
+        </div>
+        <span class="nav-brand-name">NOVAH Crochets</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" onclick="toggleMenu(this)">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="hero-eyebrow">Handcrafted in India</p>
+        <h1 class="hero-title">Stitched<br/><em>with Soul</em></h1>
+        <p class="hero-sub">Each piece is carefully looped, knotted, and finished by hand — made to be worn, gifted, and treasured. Discover slow fashion that feels like a warm embrace.</p>
+        <a href="#products" class="btn btn-primary">Shop Collection</a>
+      </div>
+      <div class="hero-decoration" aria-hidden="true">
+        <div class="yarn-loop yarn-loop--1"></div>
+        <div class="yarn-loop yarn-loop--2"></div>
+        <div class="yarn-loop yarn-loop--3"></div>
+      </div>
+    </section>
+
+    <!-- ===================== DIVIDER ===================== -->
+    <div class="section-divider" aria-hidden="true">
+      <svg viewBox="0 0 1200 30" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 15 Q150 0 300 15 Q450 30 600 15 Q750 0 900 15 Q1050 30 1200 15" stroke="#EFDAD8" stroke-width="1.5" fill="none"/>
+        <circle cx="300" cy="15" r="3" fill="#EFDAD8"/>
+        <circle cx="600" cy="15" r="3" fill="#EFDAD8"/>
+        <circle cx="900" cy="15" r="3" fill="#EFDAD8"/>
+      </svg>
+    </div>
+
+    <!-- ===================== PRODUCTS ===================== -->
+    <section class="products-section" id="products">
+      <div class="section-header">
+        <p class="section-eyebrow">Handmade for You</p>
+        <h2 class="section-title">Our Collection</h2>
+      </div>
+
+      <div class="products-grid">
+
+        <!-- Product 1 -->
+        <article class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://placehold.co/400x400/EFDAD8/183955?text=Product+1" alt="Product 1" loading="lazy"/>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Product 1</h3>
+            <p class="product-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Soft, handcrafted with care.</p>
+            <div class="product-footer">
+              <span class="product-price">₹499</span>
+              <a href="https://wa.me/917842357184?text=Hello%2C%20I%20would%20like%20to%20order%20Product%201.%0AHere%20are%20my%20details%3A%0AName%3A%20%0AAddress%3A%20" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Order Product 1 on WhatsApp">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://placehold.co/400x400/A8BDC5/183955?text=Product+2" alt="Product 2" loading="lazy"/>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Product 2</h3>
+            <p class="product-desc">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            <div class="product-footer">
+              <span class="product-price">₹649</span>
+              <a href="https://wa.me/917842357184?text=Hello%2C%20I%20would%20like%20to%20order%20Product%202.%0AHere%20are%20my%20details%3A%0AName%3A%20%0AAddress%3A%20" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Order Product 2 on WhatsApp">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://placehold.co/400x400/F9F8EE/183955?text=Product+3" alt="Product 3" loading="lazy"/>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Product 3</h3>
+            <p class="product-desc">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+            <div class="product-footer">
+              <span class="product-price">₹799</span>
+              <a href="https://wa.me/917842357184?text=Hello%2C%20I%20would%20like%20to%20order%20Product%203.%0AHere%20are%20my%20details%3A%0AName%3A%20%0AAddress%3A%20" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Order Product 3 on WhatsApp">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 4 -->
+        <article class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://placehold.co/400x400/EFDAD8/183955?text=Product+4" alt="Product 4" loading="lazy"/>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Product 4</h3>
+            <p class="product-desc">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+            <div class="product-footer">
+              <span class="product-price">₹549</span>
+              <a href="https://wa.me/917842357184?text=Hello%2C%20I%20would%20like%20to%20order%20Product%204.%0AHere%20are%20my%20details%3A%0AName%3A%20%0AAddress%3A%20" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Order Product 4 on WhatsApp">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 5 -->
+        <article class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://placehold.co/400x400/A8BDC5/183955?text=Product+5" alt="Product 5" loading="lazy"/>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Product 5</h3>
+            <p class="product-desc">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
+            <div class="product-footer">
+              <span class="product-price">₹899</span>
+              <a href="https://wa.me/917842357184?text=Hello%2C%20I%20would%20like%20to%20order%20Product%205.%0AHere%20are%20my%20details%3A%0AName%3A%20%0AAddress%3A%20" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Order Product 5 on WhatsApp">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 6 -->
+        <article class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://placehold.co/400x400/F9F8EE/183955?text=Product+6" alt="Product 6" loading="lazy"/>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Product 6</h3>
+            <p class="product-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada.</p>
+            <div class="product-footer">
+              <span class="product-price">₹599</span>
+              <a href="https://wa.me/917842357184?text=Hello%2C%20I%20would%20like%20to%20order%20Product%206.%0AHere%20are%20my%20details%3A%0AName%3A%20%0AAddress%3A%20" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Order Product 6 on WhatsApp">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 7 -->
+        <article class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://placehold.co/400x400/EFDAD8/183955?text=Product+7" alt="Product 7" loading="lazy"/>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Product 7</h3>
+            <p class="product-desc">Vivamus lacinia odio vitae vestibulum. Donec in efficitur leo, in commodo odio.</p>
+            <div class="product-footer">
+              <span class="product-price">₹749</span>
+              <a href="https://wa.me/917842357184?text=Hello%2C%20I%20would%20like%20to%20order%20Product%207.%0AHere%20are%20my%20details%3A%0AName%3A%20%0AAddress%3A%20" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Order Product 7 on WhatsApp">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 8 -->
+        <article class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://placehold.co/400x400/A8BDC5/183955?text=Product+8" alt="Product 8" loading="lazy"/>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Product 8</h3>
+            <p class="product-desc">Curabitur pretium tincidunt lacus. Nulla gravida orci a odio, et tempus feugiat.</p>
+            <div class="product-footer">
+              <span class="product-price">₹449</span>
+              <a href="https://wa.me/917842357184?text=Hello%2C%20I%20would%20like%20to%20order%20Product%208.%0AHere%20are%20my%20details%3A%0AName%3A%20%0AAddress%3A%20" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Order Product 8 on WhatsApp">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 9 -->
+        <article class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://placehold.co/400x400/F9F8EE/183955?text=Product+9" alt="Product 9" loading="lazy"/>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Product 9</h3>
+            <p class="product-desc">Nullam varius, turpis molestie porta ultrices, arcu ipsum condimentum nunc.</p>
+            <div class="product-footer">
+              <span class="product-price">₹699</span>
+              <a href="https://wa.me/917842357184?text=Hello%2C%20I%20would%20like%20to%20order%20Product%209.%0AHere%20are%20my%20details%3A%0AName%3A%20%0AAddress%3A%20" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Order Product 9 on WhatsApp">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 10 -->
+        <article class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://placehold.co/400x400/EFDAD8/183955?text=Product+10" alt="Product 10" loading="lazy"/>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Product 10</h3>
+            <p class="product-desc">Sed blandit libero volutpat sed cras ornare. Adipiscing enim eu turpis egestas.</p>
+            <div class="product-footer">
+              <span class="product-price">₹849</span>
+              <a href="https://wa.me/917842357184?text=Hello%2C%20I%20would%20like%20to%20order%20Product%2010.%0AHere%20are%20my%20details%3A%0AName%3A%20%0AAddress%3A%20" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Order Product 10 on WhatsApp">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 11 -->
+        <article class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://placehold.co/400x400/A8BDC5/183955?text=Product+11" alt="Product 11" loading="lazy"/>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Product 11</h3>
+            <p class="product-desc">Pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus.</p>
+            <div class="product-footer">
+              <span class="product-price">₹529</span>
+              <a href="https://wa.me/917842357184?text=Hello%2C%20I%20would%20like%20to%20order%20Product%2011.%0AHere%20are%20my%20details%3A%0AName%3A%20%0AAddress%3A%20" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Order Product 11 on WhatsApp">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 12 -->
+        <article class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://placehold.co/400x400/F9F8EE/183955?text=Product+12" alt="Product 12" loading="lazy"/>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Product 12</h3>
+            <p class="product-desc">Ornare arcu odio ut sem nulla pharetra diam. Sit amet commodo nulla facilisi.</p>
+            <div class="product-footer">
+              <span class="product-price">₹679</span>
+              <a href="https://wa.me/917842357184?text=Hello%2C%20I%20would%20like%20to%20order%20Product%2012.%0AHere%20are%20my%20details%3A%0AName%3A%20%0AAddress%3A%20" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Order Product 12 on WhatsApp">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 13 -->
+        <article class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://placehold.co/400x400/EFDAD8/183955?text=Product+13" alt="Product 13" loading="lazy"/>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Product 13</h3>
+            <p class="product-desc">Quisque sagittis purus sit amet volutpat. Sagittis vitae et leo duis ut diam.</p>
+            <div class="product-footer">
+              <span class="product-price">₹949</span>
+              <a href="https://wa.me/917842357184?text=Hello%2C%20I%20would%20like%20to%20order%20Product%2013.%0AHere%20are%20my%20details%3A%0AName%3A%20%0AAddress%3A%20" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Order Product 13 on WhatsApp">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 14 -->
+        <article class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://placehold.co/400x400/A8BDC5/183955?text=Product+14" alt="Product 14" loading="lazy"/>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Product 14</h3>
+            <p class="product-desc">Pharetra sit amet aliquam id diam maecenas ultricies. Mi eget mauris pharetra.</p>
+            <div class="product-footer">
+              <span class="product-price">₹619</span>
+              <a href="https://wa.me/917842357184?text=Hello%2C%20I%20would%20like%20to%20order%20Product%2014.%0AHere%20are%20my%20details%3A%0AName%3A%20%0AAddress%3A%20" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Order Product 14 on WhatsApp">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 15 -->
+        <article class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://placehold.co/400x400/F9F8EE/183955?text=Product+15" alt="Product 15" loading="lazy"/>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Product 15</h3>
+            <p class="product-desc">Tempus iaculis urna id volutpat lacus. Viverra orci sagittis eu volutpat.</p>
+            <div class="product-footer">
+              <span class="product-price">₹779</span>
+              <a href="https://wa.me/917842357184?text=Hello%2C%20I%20would%20like%20to%20order%20Product%2015.%0AHere%20are%20my%20details%3A%0AName%3A%20%0AAddress%3A%20" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Order Product 15 on WhatsApp">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 16 -->
+        <article class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://placehold.co/400x400/EFDAD8/183955?text=Product+16" alt="Product 16" loading="lazy"/>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Product 16</h3>
+            <p class="product-desc">Odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus.</p>
+            <div class="product-footer">
+              <span class="product-price">₹469</span>
+              <a href="https://wa.me/917842357184?text=Hello%2C%20I%20would%20like%20to%20order%20Product%2016.%0AHere%20are%20my%20details%3A%0AName%3A%20%0AAddress%3A%20" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Order Product 16 on WhatsApp">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 17 -->
+        <article class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://placehold.co/400x400/A8BDC5/183955?text=Product+17" alt="Product 17" loading="lazy"/>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Product 17</h3>
+            <p class="product-desc">Feugiat in fermentum posuere urna nec. Aenean euismod elementum nisi quis.</p>
+            <div class="product-footer">
+              <span class="product-price">₹729</span>
+              <a href="https://wa.me/917842357184?text=Hello%2C%20I%20would%20like%20to%20order%20Product%2017.%0AHere%20are%20my%20details%3A%0AName%3A%20%0AAddress%3A%20" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Order Product 17 on WhatsApp">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 18 -->
+        <article class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://placehold.co/400x400/F9F8EE/183955?text=Product+18" alt="Product 18" loading="lazy"/>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Product 18</h3>
+            <p class="product-desc">Pellentesque habitant morbi tristique senectus et netus malesuada fames.</p>
+            <div class="product-footer">
+              <span class="product-price">₹579</span>
+              <a href="https://wa.me/917842357184?text=Hello%2C%20I%20would%20like%20to%20order%20Product%2018.%0AHere%20are%20my%20details%3A%0AName%3A%20%0AAddress%3A%20" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Order Product 18 on WhatsApp">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 19 -->
+        <article class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://placehold.co/400x400/EFDAD8/183955?text=Product+19" alt="Product 19" loading="lazy"/>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Product 19</h3>
+            <p class="product-desc">Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor elit.</p>
+            <div class="product-footer">
+              <span class="product-price">₹829</span>
+              <a href="https://wa.me/917842357184?text=Hello%2C%20I%20would%20like%20to%20order%20Product%2019.%0AHere%20are%20my%20details%3A%0AName%3A%20%0AAddress%3A%20" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Order Product 19 on WhatsApp">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 20 -->
+        <article class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://placehold.co/400x400/A8BDC5/183955?text=Product+20" alt="Product 20" loading="lazy"/>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Product 20</h3>
+            <p class="product-desc">Sed id semper risus in hendrerit gravida rutrum. Mauris in aliquam sem.</p>
+            <div class="product-footer">
+              <span class="product-price">₹659</span>
+              <a href="https://wa.me/917842357184?text=Hello%2C%20I%20would%20like%20to%20order%20Product%2020.%0AHere%20are%20my%20details%3A%0AName%3A%20%0AAddress%3A%20" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Order Product 20 on WhatsApp">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 21 -->
+        <article class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://placehold.co/400x400/F9F8EE/183955?text=Product+21" alt="Product 21" loading="lazy"/>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Product 21</h3>
+            <p class="product-desc">Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien.</p>
+            <div class="product-footer">
+              <span class="product-price">₹879</span>
+              <a href="https://wa.me/917842357184?text=Hello%2C%20I%20would%20like%20to%20order%20Product%2021.%0AHere%20are%20my%20details%3A%0AName%3A%20%0AAddress%3A%20" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Order Product 21 on WhatsApp">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 22 -->
+        <article class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://placehold.co/400x400/EFDAD8/183955?text=Product+22" alt="Product 22" loading="lazy"/>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Product 22</h3>
+            <p class="product-desc">Nec ullamcorper sit amet risus nullam eget felis. Eget arcu dictum varius.</p>
+            <div class="product-footer">
+              <span class="product-price">₹549</span>
+              <a href="https://wa.me/917842357184?text=Hello%2C%20I%20would%20like%20to%20order%20Product%2022.%0AHere%20are%20my%20details%3A%0AName%3A%20%0AAddress%3A%20" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Order Product 22 on WhatsApp">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 23 -->
+        <article class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://placehold.co/400x400/A8BDC5/183955?text=Product+23" alt="Product 23" loading="lazy"/>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Product 23</h3>
+            <p class="product-desc">Diam donec adipiscing tristique risus nec feugiat in fermentum posuere urna.</p>
+            <div class="product-footer">
+              <span class="product-price">₹719</span>
+              <a href="https://wa.me/917842357184?text=Hello%2C%20I%20would%20like%20to%20order%20Product%2023.%0AHere%20are%20my%20details%3A%0AName%3A%20%0AAddress%3A%20" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Order Product 23 on WhatsApp">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 24 -->
+        <article class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://placehold.co/400x400/F9F8EE/183955?text=Product+24" alt="Product 24" loading="lazy"/>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Product 24</h3>
+            <p class="product-desc">Volutpat blandit aliquam etiam erat velit scelerisque. Nulla facilisi etiam dignissim.</p>
+            <div class="product-footer">
+              <span class="product-price">₹489</span>
+              <a href="https://wa.me/917842357184?text=Hello%2C%20I%20would%20like%20to%20order%20Product%2024.%0AHere%20are%20my%20details%3A%0AName%3A%20%0AAddress%3A%20" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Order Product 24 on WhatsApp">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 25 -->
+        <article class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://placehold.co/400x400/EFDAD8/183955?text=Product+25" alt="Product 25" loading="lazy"/>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Product 25</h3>
+            <p class="product-desc">Tortor id aliquet lectus proin nibh nisl. Condimentum mattis pellentesque id nibh.</p>
+            <div class="product-footer">
+              <span class="product-price">₹999</span>
+              <a href="https://wa.me/917842357184?text=Hello%2C%20I%20would%20like%20to%20order%20Product%2025.%0AHere%20are%20my%20details%3A%0AName%3A%20%0AAddress%3A%20" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Order Product 25 on WhatsApp">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /products-grid -->
+    </section>
+
+    <!-- ===================== DIVIDER ===================== -->
+    <div class="section-divider" aria-hidden="true">
+      <svg viewBox="0 0 1200 30" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 15 Q150 30 300 15 Q450 0 600 15 Q750 30 900 15 Q1050 0 1200 15" stroke="#A8BDC5" stroke-width="1.5" fill="none"/>
+        <circle cx="300" cy="15" r="3" fill="#A8BDC5"/>
+        <circle cx="600" cy="15" r="3" fill="#A8BDC5"/>
+        <circle cx="900" cy="15" r="3" fill="#A8BDC5"/>
+      </svg>
+    </div>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="about-section" id="about">
+      <div class="about-inner">
+        <div class="about-image" aria-hidden="true">
+          <div class="about-img-placeholder">
+            <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="60" cy="60" r="58" stroke="#183955" stroke-width="1"/>
+              <path d="M30 80 Q45 40 60 60 Q75 80 90 40" stroke="#183955" stroke-width="2" stroke-linecap="round" fill="none"/>
+              <path d="M35 70 Q50 50 65 65 Q80 80 95 50" stroke="#EFDAD8" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+              <circle cx="30" cy="80" r="4" fill="#183955"/>
+              <circle cx="90" cy="40" r="4" fill="#183955"/>
+            </svg>
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="section-eyebrow">Our Story</p>
+          <h2 class="section-title">Made by Hand,<br/><em>Meant to Last</em></h2>
+          <p>NOVAH Crochets was born from a quiet love of making things slowly and well. Every stitch is a small act of care — looped with intention, finished with patience, and sent out into the world wrapped in warmth. We believe handmade pieces carry something mass production never can: the quiet presence of a human touch.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida risus commodo viverra maecenas accumsan.</p>
+          <div class="about-pillars">
+            <div class="pillar">
+              <span class="pillar-icon" aria-hidden="true">✦</span>
+              <span>Handcrafted</span>
+            </div>
+            <div class="pillar">
+              <span class="pillar-icon" aria-hidden="true">✦</span>
+              <span>Ethically Made</span>
+            </div>
+            <div class="pillar">
+              <span class="pillar-icon" aria-hidden="true">✦</span>
+              <span>Made to Order</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== DIVIDER ===================== -->
+    <div class="section-divider" aria-hidden="true">
+      <svg viewBox="0 0 1200 30" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 15 Q150 0 300 15 Q450 30 600 15 Q750 0 900 15 Q1050 30 1200 15" stroke="#EFDAD8" stroke-width="1.5" fill="none"/>
+        <circle cx="300" cy="15" r="3" fill="#EFDAD8"/>
+        <circle cx="600" cy="15" r="3" fill="#EFDAD8"/>
+        <circle cx="900" cy="15" r="3" fill="#EFDAD8"/>
+      </svg>
+    </div>
+
+    <!-- ===================== REVIEWS ===================== -->
+    <section class="reviews-section" id="reviews">
+      <div class="section-header">
+        <p class="section-eyebrow">Loved by Many</p>
+        <h2 class="section-title">What Our Customers Say</h2>
+      </div>
+
+      <div class="reviews-grid">
+
+        <article class="review-card">
+          <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="review-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Absolutely beautiful work!"</p>
+          <p class="review-author">— Priya S.</p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="review-text">"Ut enim ad minim veniam, quis nostrud exercitation. The quality is incredible — you can feel how much care went into every stitch."</p>
+          <p class="review-author">— Meera R.</p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="review-text">"Duis aute irure dolor in reprehenderit. Ordered as a gift and the recipient was absolutely delighted. Stunning packaging too!"</p>
+          <p class="review-author">— Ananya K.</p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="review-text">"Excepteur sint occaecat cupidatat non proident. My go-to for handmade gifts. Fast delivery and WhatsApp ordering made it so easy."</p>
+          <p class="review-author">— Kavya M.</p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="review-text">"Laboris nisi ut aliquip ex ea commodo consequat. Second order and just as perfect as the first. NOVAH is my favourite small brand!"</p>
+          <p class="review-author">— Divya T.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="contact-section" id="contact">
+      <div class="contact-inner">
+        <p class="section-eyebrow">Say Hello</p>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="contact-sub">We'd love to hear from you. Whether you'd like to place a custom order, ask a question, or simply say hello — reach out and we'll get back to you with warmth.</p>
+        <div class="contact-buttons">
+          <a href="https://wa.me/917842357184" class="btn btn-contact-wa" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp Us
+          </a>
+          <a href="https://instagram.com/novahcrochet" class="btn btn-contact-ig" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+            </svg>
+            Follow on Instagram
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo" aria-hidden="true">
+          <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="22" cy="22" r="21" stroke="#F9F8EE" stroke-width="1.5"/>
+            <path d="M14 28 Q18 16 22 22 Q26 28 30 16" stroke="#EFDAD8" stroke-width="2" stroke-linecap="round" fill="none"/>
+            <circle cx="14" cy="28" r="2" fill="#EFDAD8"/>
+            <circle cx="30" cy="16" r="2" fill="#EFDAD8"/>
+          </svg>
+        </div>
+        <p class="footer-name">NOVAH Crochets</p>
+        <p class="footer-tagline">Stitched with Soul</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-social">
+        <a href="https://wa.me/917842357184" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
+        <a href="https://instagram.com/novahcrochet" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+          </svg>
+        </a>
+      </div>
+
+      <p class="footer-copy">&copy; 2025 NOVAH Crochets. All rights reserved. Made with love.</p>
+    </div>
+  </footer>
+
+  <script>
+    // ── Mobile nav toggle ──
+    function toggleMenu(btn) {
+      const links = document.getElementById('navLinks');
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+      links.classList.toggle('open');
+    }
+
+    // ── Close menu on nav link click ──
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('navLinks').classList.remove('open');
+        document.querySelector('.nav-toggle').setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // ── Sticky nav shadow on scroll ──
+    const nav = document.querySelector('.nav-wrapper');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 20);
+    });
+  </script>
+
+</body>
+</html>
