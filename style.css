@@ -1,7 +1,3 @@
-/* ============================================================
-   NOVAH Crochets — style.css
-   Premium handmade crochet e-commerce website
-   ============================================================ */
 
 /* ── 1. CSS Variables ─────────────────────────────────────── */
 :root {
@@ -177,11 +173,11 @@ p { font-size: 0.95rem; color: var(--text-body); max-width: 60ch; }
 
 /* Contact buttons */
 .btn-contact-wa {
-  background: #25D366;
-  color: #fff;
+  background: var(--pink);
+  color: var(--navy);
+  border: 2px solid var(--navy);
   font-size: 0.9rem;
   padding: 0.9rem 2rem;
-  box-shadow: 0 4px 18px rgba(37, 211, 102, 0.3);
 }
 
 .btn-contact-wa svg {
@@ -189,13 +185,9 @@ p { font-size: 0.95rem; color: var(--text-body); max-width: 60ch; }
   height: 20px;
 }
 
-.btn-contact-wa:hover {
-  background: #1db954;
-  box-shadow: 0 8px 28px rgba(37, 211, 102, 0.4);
-}
 
 .btn-contact-ig {
-  background: transparent;
+  background: var(--pink);
   color: var(--navy);
   border: 2px solid var(--navy);
   font-size: 0.9rem;
@@ -207,10 +199,6 @@ p { font-size: 0.95rem; color: var(--text-body); max-width: 60ch; }
   height: 20px;
 }
 
-.btn-contact-ig:hover {
-  background: var(--navy);
-  color: var(--cream);
-}
 
 /* ── 6. Section Divider ──────────────────────────────────── */
 .section-divider {
@@ -226,6 +214,12 @@ p { font-size: 0.95rem; color: var(--text-body); max-width: 60ch; }
 }
 
 /* ── 7. Navigation ───────────────────────────────────────── */
+.nav-img-placeholder {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 .nav-wrapper {
   position: sticky;
   top: 0;
@@ -363,7 +357,7 @@ p { font-size: 0.95rem; color: var(--text-body); max-width: 60ch; }
 }
 
 .hero .section-eyebrow {
-  color: var(--pink);
+  color: var(--pink-deep);
   opacity: 0.9;
 }
 
@@ -373,8 +367,13 @@ p { font-size: 0.95rem; color: var(--text-body); max-width: 60ch; }
   line-height: 1.08;
 }
 
+.hero-eyebrow {
+  color: var(--blue-dark);
+  opacity: 0.9;
+}
+
 .hero-title em {
-  color: var(--pink);
+  color: var(--pink-deep);
   display: block;
 }
 
@@ -396,7 +395,7 @@ p { font-size: 0.95rem; color: var(--text-body); max-width: 60ch; }
 .yarn-loop {
   position: absolute;
   border-radius: 50%;
-  border: 1px solid rgba(239, 218, 216, 0.12);
+  border: 1px solid var(--pink-deep);
 }
 
 .yarn-loop--1 {
@@ -411,7 +410,7 @@ p { font-size: 0.95rem; color: var(--text-body); max-width: 60ch; }
   height: 300px;
   bottom: -80px;
   left: -60px;
-  border-color: rgba(168, 189, 197, 0.1);
+  border-color: var(--pink-deep);
 }
 
 .yarn-loop--3 {
@@ -419,7 +418,7 @@ p { font-size: 0.95rem; color: var(--text-body); max-width: 60ch; }
   height: 180px;
   top: 60px;
   left: 10%;
-  border-color: rgba(239, 218, 216, 0.07);
+  border-color: var(--pink-deep);
 }
 
 /* ── 9. Products ─────────────────────────────────────────── */
@@ -527,10 +526,9 @@ p { font-size: 0.95rem; color: var(--text-body); max-width: 60ch; }
 .about-img-placeholder {
   width: 200px;
   height: 200px;
-  margin: 0 auto;
   background: rgba(255,255,255,0.5);
   border-radius: 50%;
-  display: flex;
+  object-fit: cover;
   align-items: center;
   justify-content: center;
   box-shadow: var(--shadow-soft);
@@ -599,6 +597,7 @@ p { font-size: 0.95rem; color: var(--text-body); max-width: 60ch; }
   gap: 1rem;
   max-width: 1100px;
   margin: 0 auto;
+  align-self:auto;
 }
 
 .review-card {
