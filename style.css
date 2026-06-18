@@ -395,7 +395,7 @@ p { font-size: 0.95rem; color: var(--text-body); max-width: 60ch; }
 .yarn-loop {
   position: absolute;
   border-radius: 50%;
-  border: 1px solid var(--pink-deep);
+  border: 1px solid var(--navy-light);
 }
 
 .yarn-loop--1 {
@@ -403,6 +403,7 @@ p { font-size: 0.95rem; color: var(--text-body); max-width: 60ch; }
   height: 500px;
   top: -120px;
   right: -140px;
+  border-color: var(--navy-light)
 }
 
 .yarn-loop--2 {
@@ -410,7 +411,7 @@ p { font-size: 0.95rem; color: var(--text-body); max-width: 60ch; }
   height: 300px;
   bottom: -80px;
   left: -60px;
-  border-color: var(--pink-deep);
+  border-color: var(--navy-light);
 }
 
 .yarn-loop--3 {
@@ -418,7 +419,7 @@ p { font-size: 0.95rem; color: var(--text-body); max-width: 60ch; }
   height: 180px;
   top: 60px;
   left: 10%;
-  border-color: var(--pink-deep);
+  border-color: var(--navy-light);
 }
 
 /* ── 9. Products ─────────────────────────────────────────── */
